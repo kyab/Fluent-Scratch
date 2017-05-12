@@ -11,7 +11,7 @@
 		EBDE976F1EC0AA12000A03E0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EBDE976E1EC0AA12000A03E0 /* main.m */; };
 		EBDE97741EC0AA12000A03E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBDE97731EC0AA12000A03E0 /* Assets.xcassets */; };
 		EBDE977F1EC0AA76000A03E0 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBDE977E1EC0AA76000A03E0 /* MainMenu.xib */; };
-		EBDE97821EC0AAC5000A03E0 /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBDE97811EC0AAC5000A03E0 /* AppController.m */; };
+		EBDE97821EC0AAC5000A03E0 /* AppController.mm in Sources */ = {isa = PBXBuildFile; fileRef = EBDE97811EC0AAC5000A03E0 /* AppController.mm */; };
 		EBDE97851EC0AD58000A03E0 /* MainView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBDE97841EC0AD58000A03E0 /* MainView.m */; };
 		EBDE97881EC0AD7B000A03E0 /* AudioEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = EBDE97871EC0AD7B000A03E0 /* AudioEngine.m */; };
 		EBDE978B1EC0ADAB000A03E0 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBDE978A1EC0ADAB000A03E0 /* AudioToolbox.framework */; };
@@ -27,7 +27,7 @@
 		EBDE97781EC0AA12000A03E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EBDE977E1EC0AA76000A03E0 /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
 		EBDE97801EC0AAC5000A03E0 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
-		EBDE97811EC0AAC5000A03E0 /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
+		EBDE97811EC0AAC5000A03E0 /* AppController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppController.mm; sourceTree = "<group>"; };
 		EBDE97831EC0AD58000A03E0 /* MainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainView.h; sourceTree = "<group>"; };
 		EBDE97841EC0AD58000A03E0 /* MainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainView.m; sourceTree = "<group>"; };
 		EBDE97861EC0AD7B000A03E0 /* AudioEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioEngine.h; sourceTree = "<group>"; };
@@ -69,18 +69,18 @@
 		EBDE97691EC0AA12000A03E0 /* Fluent Scratch */ = {
 			isa = PBXGroup;
 			children = (
-				EBDE977E1EC0AA76000A03E0 /* MainMenu.xib */,
-				EBDE976A1EC0AA12000A03E0 /* AppDelegate.h */,
-				EBDE976B1EC0AA12000A03E0 /* AppDelegate.m */,
+				EBDE97801EC0AAC5000A03E0 /* AppController.h */,
+				EBDE97811EC0AAC5000A03E0 /* AppController.mm */,
 				EBDE978C1EC0B084000A03E0 /* TurnTableView.h */,
 				EBDE978D1EC0B084000A03E0 /* TurnTableView.m */,
-				EBDE97801EC0AAC5000A03E0 /* AppController.h */,
-				EBDE97811EC0AAC5000A03E0 /* AppController.m */,
 				EBDE97831EC0AD58000A03E0 /* MainView.h */,
 				EBDE97841EC0AD58000A03E0 /* MainView.m */,
 				EBDE97861EC0AD7B000A03E0 /* AudioEngine.h */,
 				EBDE97871EC0AD7B000A03E0 /* AudioEngine.m */,
+				EBDE977E1EC0AA76000A03E0 /* MainMenu.xib */,
 				EBDE97731EC0AA12000A03E0 /* Assets.xcassets */,
+				EBDE976A1EC0AA12000A03E0 /* AppDelegate.h */,
+				EBDE976B1EC0AA12000A03E0 /* AppDelegate.m */,
 				EBDE97781EC0AA12000A03E0 /* Info.plist */,
 				EBDE976D1EC0AA12000A03E0 /* Supporting Files */,
 			);
@@ -177,7 +177,7 @@
 				EBDE976F1EC0AA12000A03E0 /* main.m in Sources */,
 				EBDE97851EC0AD58000A03E0 /* MainView.m in Sources */,
 				EBDE976C1EC0AA12000A03E0 /* AppDelegate.m in Sources */,
-				EBDE97821EC0AAC5000A03E0 /* AppController.m in Sources */,
+				EBDE97821EC0AAC5000A03E0 /* AppController.mm in Sources */,
 				EBDE97881EC0AD7B000A03E0 /* AudioEngine.m in Sources */,
 				EBDE978E1EC0B084000A03E0 /* TurnTableView.m in Sources */,
 			);
@@ -320,6 +320,7 @@
 				EBDE977D1EC0AA12000A03E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

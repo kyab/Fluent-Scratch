@@ -1,5 +1,5 @@
 //
-//  RecordView.h
+//  TurnTableView.h
 //  Fluent Scratch
 //
 //  Created by kyab on 2017/05/08.
@@ -8,6 +8,8 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface TurnTableView : NSView
+@interface TurnTableView : NSView{
+    BOOL _pressing;
+}
 
 @end

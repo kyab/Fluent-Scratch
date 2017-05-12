@@ -30,8 +30,6 @@ OSStatus MyRender(void *inRefCon,
                   AudioBufferList *ioData){
     AudioEngine *engine = (__bridge AudioEngine *)inRefCon;
     return [engine renderOutput:ioActionFlags inTimeStamp:inTimeStamp inBusNumber:inBusNumber inNumberFrames:inNumberFrames ioData:ioData];
-    
-    return noErr;
 }
 
 - (OSStatus) renderOutput:(AudioUnitRenderActionFlags *)ioActionFlags inTimeStamp:(const AudioTimeStamp *) inTimeStamp inBusNumber:(UInt32) inBusNumber inNumberFrames:(UInt32)inNumberFrames ioData:(AudioBufferList *)ioData{
@@ -144,6 +142,10 @@ OSStatus MyRender(void *inRefCon,
 
 
 -(BOOL)start{
+    
+    if (_bIsPlaying){
+        return YES;
+    }
     
     OSStatus ret = AUGraphStart(_graph);
     if (FAILED(ret)){
